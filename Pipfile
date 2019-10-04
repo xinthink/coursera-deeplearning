@@ -1,0 +1,19 @@
+# pipenv --python `which python3`
+
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"
+pep8 = "*"
+
+[packages]
+ipykernel = "*"
+jupyter = "*"
+matplotlib = "*"
+pandas = "*"
+
+[requires]
+python_version = "3.7"
