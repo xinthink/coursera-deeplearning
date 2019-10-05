@@ -8,12 +8,15 @@ name = "pypi"
 [dev-packages]
 pytest = "*"
 pep8 = "*"
+yapf = "*"
 
 [packages]
 ipykernel = "*"
 jupyter = "*"
 matplotlib = "*"
 pandas = "*"
+scipy = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
