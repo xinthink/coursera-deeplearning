@@ -119,6 +119,7 @@ def propagate(w, b, X, Y):
 
     return grads, cost
 
+
 w, b, X, Y = np.array([[1.], [2.]]), 2., np.array([[1., 2., -1.], [3., 4., -3.2]]), np.array([[1, 0, 1]])
 grads, cost = propagate(w, b, X, Y)
 print("dw = " + str(grads["dw"]))
@@ -185,6 +186,7 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost=False):
 
     return params, grads, costs
 
+
 params, grads, costs = optimize(w, b, X, Y, num_iterations=100, learning_rate=0.009, print_cost=False)
 
 print("w = " + str(params["w"]))
@@ -225,6 +227,7 @@ def predict(w, b, X):
     assert(Y_prediction.shape == (1, m))
 
     return Y_prediction
+
 
 w = np.array([[0.1124579], [0.23106775]])
 b = -0.3
