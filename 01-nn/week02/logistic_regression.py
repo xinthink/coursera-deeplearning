@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 from lr_utils import load_dataset
 
 # Loading the data (cat/non-cat)
@@ -53,6 +54,9 @@ def sigmoid(z):
     return s
 
 
+print("sigmoid([0, 2]) = %s" % sigmoid(np.array([0, 2])))
+
+
 def initialize_with_zeros(dim):
     """
     This function creates a vector of zeros of shape (dim, 1) for w and initializes b to 0.
@@ -74,6 +78,12 @@ def initialize_with_zeros(dim):
     assert(isinstance(b, float) or isinstance(b, int))
 
     return w, b
+
+
+dim = 2
+w, b = initialize_with_zeros(dim)
+print("w = %s" % w)
+print("b = %f" % b)
 
 
 def propagate(w, b, X, Y):
@@ -300,3 +310,10 @@ d = model(train_set_x,
           num_iterations=2000,
           learning_rate=0.005,
           print_cost=True)
+
+# Example of a picture that was wrongly classified.
+index = 1
+plt.imshow(test_set_x[:, index].reshape((num_px, num_px, 3)))
+print("y = %d, you predicted that it is a \"%s\" picture." %
+      (test_set_y[0, index],
+       classes[int(d["Y_prediction_test"][0, index])].decode("utf-8")))
