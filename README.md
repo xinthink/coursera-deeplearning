@@ -5,7 +5,7 @@
 - [01-nn](01-nn) Assignments for course 1/5: [Neural Networks and Deep Learning]
 - [02-dnn](02-dnn) Assignments for course 2/5: [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization]
 - `*.ipynb` files are Jupyter Notebooks of the assignments
-- `*.py` files are standalone code for assignments (without documentation) you can run & debug. Some of them are helper files.
+- `*.py` files are standalone code (without documentation) you can run & debug. Some of them are helper files.
 
 ## Getting Started
 
