@@ -19,6 +19,7 @@ scipy = "*"
 pillow = "*"
 h5py = "*"
 scikit-learn = "*"
+tensorflow = "==1.15"
 
 [requires]
 python_version = "3.7"
