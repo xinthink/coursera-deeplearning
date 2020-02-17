@@ -20,6 +20,8 @@ pillow = "*"
 h5py = "*"
 scikit-learn = "*"
 tensorflow = "==1.15"
+keras = "*"
+pydot = "*"
 
 [requires]
 python_version = "3.7"
